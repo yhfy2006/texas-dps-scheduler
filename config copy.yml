@@ -1,0 +1,50 @@
+personalInfo:
+  firstName: 'Changchen'
+  lastName: 'He'
+  # Date of birth (MM/DD/YYYY)
+  dob: '08/28/1988'
+  # Use real email to get appointment infomation
+  email: 'yhfy2006@gmail.com'
+  # Not really needed but good to have a real one
+  lastFourSSN: '9097'
+  # If you want to recieve notificaion through phone, if not keep blank
+  # WARNING: Use number only (Ex: 111111111)
+  phoneNumber: "7187305784"
+  # Serivce you needed at DPS. Check the full list on https://github.com/phamleduy04/texas-dps-scheduler/wiki/TypeId-list
+  # If you need to apply for Texas DL you don't need to change it
+  typeId: 71
+
+location:
+  # Zipcode of your location
+  zipCode: '75035'
+  # Filter DPS location by distance from the zipcode
+  miles: 15
+  # Put empty ('') for any day
+  preferredDays: ''
+  # Put true/false without quotes if you want to book only same day appointment
+  sameDay: false
+  # Put how many day from today you want to book (7 is a good number)
+  daysAround: 7
+
+appSettings:
+  # Put true/false without quotes if you want to cancel the appointment automatically if found existing appointment
+  cancelIfExist: true
+  # The time interval (in ms) the app will recheck for newer dates
+  interval: 10000
+  # Set this to true if you using replit, heroku or something equivalent
+  webserver: false
+  # Set this to higher if you encounter Header Timeout error. This one is in miliseconds
+  headersTimeout: 20000 
+
+# If you dont know what to change here, dont change it :)
+webhook:
+  # If your using Bluebubbles webhook/api put this to true otherwise, keep it false
+  enable: false
+  url: ''
+  password: ''
+  # phone number with country code (EX: +11111111111)
+  phoneNumber: ''
+  # private-api or apple-script
+  sendMethod: 'apple-script'
+  # iMessage or SMS
+  phoneNumberType: ''
